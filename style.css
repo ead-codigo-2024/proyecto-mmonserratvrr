@@ -1,5 +1,5 @@
 body {
-    background-image: url('fondo\ revista.jpg');
+    background-image: url('fondo\ revista\ vectorizada.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,3 +41,21 @@ body {
     color: #BC5F04;
     text-align: center;
   }
+  .intro__action {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #BC5F04;
+    border-radius: 50px;
+    background-color: #BC5F04;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 600px;
+}
+.intro__action:hover {
+    background-color: white;
+    color: black;
+}
