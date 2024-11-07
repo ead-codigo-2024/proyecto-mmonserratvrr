@@ -1,61 +1,157 @@
-body {
-    background-image: url('fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-.intro__title {
-    font-family: Nunito;
-    font-size: 15rem;
-    text-align: center;
-    letter-spacing: 3px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    color: #BC5F04
-  }
-  .intro__description{
-    font-family: Roboto;
-    font-size: 1.5rem;
-    text-align: center;
-    letter-spacing: 22px;
-  }
-  h2 {
-    font-family: Urbanist;
-    font-weight: 600;
-    letter-spacing: 5px;
-    color: #BC5F04;
-    display: inline-block;
-    border-bottom: 3px dotted #000;
-    padding-bottom: 10px;
-    margin-left: 650px;
-  }
-  h3 {
-    text-align: center;
-    font-family: Dancing Script;
-    font-size: 5rem;
-    color: #BC5F04;
-  }
-  h4 {
-    font-family: Urbanist;
-    font-size: 1.5rem;
-    color: #BC5F04;
-    text-align: center;
-  }
-  .intro__action {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    display: inline-block;
-    padding: 15px 30px;
-    border: 2px solid #BC5F04;
-    border-radius: 50px;
-    background-color: #BC5F04;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    margin-left: 600px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.intro__action:hover {
-    background-color: white;
-    color: black;
+
+body {
+  background: url('fondo\ comprimido\ oficial.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 800;
+  color: #A3752C;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-right: 100px;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  font-family: Roboto;
+  margin: 0 21px;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: 450;
+  letter-spacing: 1px;
+}
+
+.nav-item .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 10px 0;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.116);
+  border: 1px solid black;
+}
+
+.nav-item:hover .dropdown {
+  display: block; 
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 10px 15px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 450;
+  letter-spacing: 1px;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.decorative-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decorative-left, .decorative-right {
+  width: 150px;
+  height: 400px;
+  background-size: contain;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 900;
+  color: #A3752C;
+  margin-bottom: 10px;
+}
+
+.year, .subtitle {
+  font-family: Roboto;
+  font-size: 20px;
+  color: black;
+}
+
+.year {
+  letter-spacing: 5px;
+  font-weight: 450;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+
+.boton-ver-mas {
+  font-family: Montserrat;
+  font-weight: 500;
+  background-color: #A3752C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.boton-ver-mas:hover {
+  background-color: #775623;
+  text-decoration: underline;
 }
