@@ -4,14 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito:wght@200..1000&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>LA CAV</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -50,7 +44,9 @@
                 </div>
             </div>
         </nav>
+        <button class="subscribe-button" onclick="openForm()">Suscribirse</button>
     </header>
+
     <main>
         <div class="decorative-border">
             <div class="decorative-left"></div>
@@ -58,11 +54,28 @@
                 <h1>LOS MEJORES RESTAURANTES DE VIÑAS</h1>
                 <p class="year">2021</p>
                 <p class="subtitle">CLUB DE AMANTES DEL VINO</p>
-               <button class="boton-ver-mas" onclick="window.location.href='intro.html'">Ver más</button>
+                <button class="boton-ver-mas" onclick="window.location.href='intro.html'">Ver más</button>
             </div>
             <div class="decorative-right"></div>
         </div>
     </main>
+
+    <div id="subscribe-form" class="form-popup">
+        <div class="form-content">
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            <h2>Suscríbete</h2>
+            <form action="#" method="POST" id="subscriptionForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
