@@ -39,12 +39,12 @@ nav {
 
 nav a {
     font-family: 'Roboto', sans-serif;
-    margin: 0 15px;
+    margin: 0 21px;
     font-size: 14px;
     color: black;
     text-decoration: none;
     font-weight: 450;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
 }
 
 .nav-item .dropdown {
@@ -96,8 +96,8 @@ nav a {
 
 .image-section {
     position: relative;
-    width: 750px;
-    height: 850px;
+    width: 758px;
+    height: 858px;
     overflow: hidden;
 }
 
@@ -109,8 +109,8 @@ nav a {
 
 .text-overlay {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 650px;
+    left: 50px;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
